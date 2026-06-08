@@ -93,42 +93,32 @@
   <main class="wrap">
     <section class="grid cards">
       <article class="card">
-        <div class="card-head"><h2>Recordatorio Anthropic</h2><span class="tag ok">activo</span></div>
-        <table>
-          <tr><th>Funcion</th><td>Recordar por WhatsApp cancelar Anthropic.</td></tr>
-          <tr><th>Ejecucion</th><td>2026-06-09 10:00 Europe/Madrid.</td></tr>
-          <tr><th>Tipo</th><td>Puntual, se elimina tras ejecutar.</td></tr>
-          <tr><th>Entrega</th><td>WhatsApp a Iggy.</td></tr>
-        </table>
-      </article>
-
-      <article class="card">
         <div class="card-head"><h2>Revenue Sevilla APT</h2><span class="tag ok">activo</span></div>
         <table>
           <tr><th>Funcion</th><td>Actualizar eventos de demanda, calendario, dashboard HTML y proyecto Markdown.</td></tr>
           <tr><th>Ejecucion</th><td>Lunes 07:00 Europe/Madrid.</td></tr>
-          <tr><th>Entrega</th><td>Resumen por WhatsApp.</td></tr>
-          <tr><th>Entregables</th><td>Proyecto Revenue Sevilla APT, dashboard revenue, calendario Revenue Sevilla APT.</td></tr>
+          <tr><th>Entrega</th><td>Link del HTML actualizado por WhatsApp.</td></tr>
+          <tr><th>Entregables</th><td>Proyecto Revenue Sevilla APT, dashboard revenue, GitHub Pages, calendario Revenue Sevilla APT.</td></tr>
         </table>
       </article>
 
       <article class="card">
-        <div class="card-head"><h2>Fiscal mensual</h2><span class="tag ok">activo</span></div>
+        <div class="card-head"><h2>Paula CFO mensual</h2><span class="tag ok">activo</span></div>
         <table>
-          <tr><th>Funcion</th><td>Actualizar datos fiscales, calendario fiscal, Markdown y dashboard fiscal.</td></tr>
+          <tr><th>Funcion</th><td>Actualizar empresas, fiscalidad, contabilidad, caja, gastos, fugas, margenes y dashboard fiscal.</td></tr>
           <tr><th>Ejecucion</th><td>Dia 15 de cada mes, 09:00 Europe/Madrid.</td></tr>
-          <tr><th>Entrega</th><td>Sin mensaje por defecto; avisa solo si hay cambios, riesgos o dudas.</td></tr>
+          <tr><th>Entrega</th><td>Sin mensaje por defecto; avisa solo si hay riesgo, ahorro, vencimiento critico o duda.</td></tr>
           <tr><th>Entregables</th><td>calendario-fiscal-empresas.md, dashboard-fiscal-empresas.html, calendario Fiscal Empresas.</td></tr>
         </table>
       </article>
 
       <article class="card">
-        <div class="card-head"><h2>Fiscal semanal Q</h2><span class="tag warn">revisar</span></div>
+        <div class="card-head"><h2>Mapas HQ nocturno</h2><span class="tag ok">activo</span></div>
         <table>
-          <tr><th>Funcion</th><td>Enviar resumen fiscal del trimestre actual por WhatsApp.</td></tr>
-          <tr><th>Ejecucion</th><td>Lunes 10:00 Europe/Madrid.</td></tr>
-          <tr><th>Entrega</th><td>WhatsApp a Iggy.</td></tr>
-          <tr><th>Nota</th><td>Ultimo run registrado en error por ejecucion PowerShell/GOG; revisar si se repite.</td></tr>
+          <tr><th>Funcion</th><td>Revisar cambios del entorno Kevin iOS y actualizar maps1.md si afecta al mapa maestro.</td></tr>
+          <tr><th>Ejecucion</th><td>Todos los dias 23:30 Europe/Madrid.</td></tr>
+          <tr><th>Entrega</th><td>Sin mensaje por defecto; avisa solo si hay cambios reales, incoherencias o riesgos.</td></tr>
+          <tr><th>Entregables</th><td>maps1.md y reglas de organizacion HQ.</td></tr>
         </table>
       </article>
     </section>
@@ -156,8 +146,9 @@
           <tbody>
             <tr><td>Revenue Sevilla APT</td><td>Pricing por semanas, eventos, puentes y fuentes.</td><td><a href="https://Iggy8319.github.io/revenue-sevilla-apt-dashboard/">Dashboard revenue</a></td></tr>
             <tr><td>Fiscal empresas</td><td>Eventos fiscales por Q, importes aproximados y fuentes.</td><td><a href="https://Iggy8319.github.io/fiscal-empresas-dashboard/">Dashboard fiscal</a></td></tr>
+            <tr><td>Paula CFO</td><td>Caza-gastos, radar de fugas, caja, margenes, auditoria, ahorro y calendario fiscal.</td><td>calendario-fiscal-empresas.md</td></tr>
             <tr><td>Contactos e Inmuebles I+D</td><td>Contactos Google bajo etiqueta visual I + D.</td><td>Proyecto Contactos y Inmuebles I +D.md</td></tr>
-            <tr><td>Mapas HQ Kevin iOS</td><td>Mapa maestro del entorno y reglas de organizacion.</td><td>maps1.md</td></tr>
+            <tr><td>Mapas HQ Kevin iOS</td><td>Mapa maestro del entorno y reglas de organizacion, revisado cada noche.</td><td>maps1.md</td></tr>
           </tbody>
         </table>
       </div>
@@ -172,6 +163,7 @@
           <li>Indicar archivos, calendarios o repositorios afectados.</li>
           <li>Si un cron falla, anotar error resumido y accion pendiente.</li>
           <li>Actualizar este HTML cuando cambie `cron Job&skills.md`.</li>
+          <li>Para recordatorios puntuales, usar Google o WhatsApp exactamente a la hora; borrar los caducados.</li>
         </ul>
       </div>
     </section>
