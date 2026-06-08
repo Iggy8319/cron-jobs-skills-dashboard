@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cron Job&skills - Kevin iOS</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --ink: #172033;
+      --muted: #667085;
+      --panel: #ffffff;
+      --line: #d9dee7;
+      --accent: #0f766e;
+      --ok: #167a5b;
+      --warn: #b7791f;
+      --err: #b42318;
+      --soft: #eef6f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 24px 18px;
+      border-bottom: 4px solid var(--accent);
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 6px; font-size: 27px; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 16px; letter-spacing: 0; }
+    p { margin: 0; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    .sub { color: #cbd5e1; font-size: 14px; }
+    .grid { display: grid; gap: 16px; }
+    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .skills { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, .05);
+    }
+    .card-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      background: var(--soft);
+      border-bottom: 1px solid var(--line);
+    }
+    .body { padding: 16px; }
+    .period { color: var(--muted); font-size: 13px; font-weight: 750; }
+    .tag { display: inline-block; padding: 3px 8px; border-radius: 999px; color: white; font-size: 11px; font-weight: 850; text-transform: uppercase; }
+    .ok { background: var(--ok); }
+    .warn { background: var(--warn); }
+    .err { background: var(--err); }
+    .muted { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid #eef1f5; font-size: 14px; }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; background: #fbfcfd; }
+    tr:last-child td { border-bottom: 0; }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin: 6px 0; }
+    .section { margin-top: 18px; }
+    .skill-card { padding: 16px; }
+    footer { color: var(--muted); font-size: 12px; padding: 18px 18px 28px; }
+    @media (max-width: 900px) {
+      .cards, .skills { grid-template-columns: 1fr; }
+      .wrap { padding: 14px; }
+      header { padding: 20px 14px; }
+      h1 { font-size: 23px; }
+      th, td { padding: 10px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Cron Job&skills - Kevin iOS</h1>
+      <p class="sub">Cron jobs activos, funcion sencilla, ejecucion y skills generales/dedicadas. Actualizado 2026-06-08.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid cards">
+      <article class="card">
+        <div class="card-head"><h2>Recordatorio Anthropic</h2><span class="tag ok">activo</span></div>
+        <table>
+          <tr><th>Funcion</th><td>Recordar por WhatsApp cancelar Anthropic.</td></tr>
+          <tr><th>Ejecucion</th><td>2026-06-09 10:00 Europe/Madrid.</td></tr>
+          <tr><th>Tipo</th><td>Puntual, se elimina tras ejecutar.</td></tr>
+          <tr><th>Entrega</th><td>WhatsApp a Iggy.</td></tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h2>Revenue Sevilla APT</h2><span class="tag ok">activo</span></div>
+        <table>
+          <tr><th>Funcion</th><td>Actualizar eventos de demanda, calendario, dashboard HTML y proyecto Markdown.</td></tr>
+          <tr><th>Ejecucion</th><td>Lunes 07:00 Europe/Madrid.</td></tr>
+          <tr><th>Entrega</th><td>Resumen por WhatsApp.</td></tr>
+          <tr><th>Entregables</th><td>Proyecto Revenue Sevilla APT, dashboard revenue, calendario Revenue Sevilla APT.</td></tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h2>Fiscal mensual</h2><span class="tag ok">activo</span></div>
+        <table>
+          <tr><th>Funcion</th><td>Actualizar datos fiscales, calendario fiscal, Markdown y dashboard fiscal.</td></tr>
+          <tr><th>Ejecucion</th><td>Dia 15 de cada mes, 09:00 Europe/Madrid.</td></tr>
+          <tr><th>Entrega</th><td>Sin mensaje por defecto; avisa solo si hay cambios, riesgos o dudas.</td></tr>
+          <tr><th>Entregables</th><td>calendario-fiscal-empresas.md, dashboard-fiscal-empresas.html, calendario Fiscal Empresas.</td></tr>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h2>Fiscal semanal Q</h2><span class="tag warn">revisar</span></div>
+        <table>
+          <tr><th>Funcion</th><td>Enviar resumen fiscal del trimestre actual por WhatsApp.</td></tr>
+          <tr><th>Ejecucion</th><td>Lunes 10:00 Europe/Madrid.</td></tr>
+          <tr><th>Entrega</th><td>WhatsApp a Iggy.</td></tr>
+          <tr><th>Nota</th><td>Ultimo run registrado en error por ejecucion PowerShell/GOG; revisar si se repite.</td></tr>
+        </table>
+      </article>
+    </section>
+
+    <section class="section card">
+      <div class="card-head"><h2>Skills generales</h2><span class="period">herramientas disponibles</span></div>
+      <div class="grid skills body">
+        <div class="skill-card"><h3>gog</h3><p class="muted">Google Workspace: Drive, Calendar, Contacts, Gmail, Sheets y Docs.</p></div>
+        <div class="skill-card"><h3>browser-automation</h3><p class="muted">Navegador real para login, flujos web y comprobaciones visuales.</p></div>
+        <div class="skill-card"><h3>canvas</h3><p class="muted">Previsualizar y depurar HTML en canvas conectado.</p></div>
+        <div class="skill-card"><h3>summarize</h3><p class="muted">Resumir URLs, PDFs, videos, documentos y archivos.</p></div>
+        <div class="skill-card"><h3>taskflow</h3><p class="muted">Coordinar tareas largas con estado, esperas y subtareas.</p></div>
+        <div class="skill-card"><h3>diagram-maker</h3><p class="muted">Crear diagramas, mapas y flujos.</p></div>
+        <div class="skill-card"><h3>openai-whisper-api</h3><p class="muted">Transcripcion de audio.</p></div>
+        <div class="skill-card"><h3>video-frames</h3><p class="muted">Extraer frames y clips de video.</p></div>
+        <div class="skill-card"><h3>healthcheck</h3><p class="muted">Auditoria y endurecimiento de hosts OpenClaw.</p></div>
+      </div>
+    </section>
+
+    <section class="section card">
+      <div class="card-head"><h2>Skills dedicadas Kevin iOS</h2><span class="period">capacidades operativas</span></div>
+      <div class="body">
+        <table>
+          <thead><tr><th>Skill / area</th><th>Funcion</th><th>Entregable principal</th></tr></thead>
+          <tbody>
+            <tr><td>Revenue Sevilla APT</td><td>Pricing por semanas, eventos, puentes y fuentes.</td><td><a href="https://Iggy8319.github.io/revenue-sevilla-apt-dashboard/">Dashboard revenue</a></td></tr>
+            <tr><td>Fiscal empresas</td><td>Eventos fiscales por Q, importes aproximados y fuentes.</td><td><a href="https://Iggy8319.github.io/fiscal-empresas-dashboard/">Dashboard fiscal</a></td></tr>
+            <tr><td>Contactos e Inmuebles I+D</td><td>Contactos Google bajo etiqueta visual I + D.</td><td>Proyecto Contactos y Inmuebles I +D.md</td></tr>
+            <tr><td>Mapas HQ Kevin iOS</td><td>Mapa maestro del entorno y reglas de organizacion.</td><td>maps1.md</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section card">
+      <div class="card-head"><h2>Reglas de mantenimiento</h2><span class="period">obligatorio</span></div>
+      <div class="body">
+        <ul>
+          <li>Documentar cualquier cron nuevo el mismo dia que se cree.</li>
+          <li>Incluir nombre, estado, frecuencia, funcion, entrega y job ID.</li>
+          <li>Indicar archivos, calendarios o repositorios afectados.</li>
+          <li>Si un cron falla, anotar error resumido y accion pendiente.</li>
+          <li>Actualizar este HTML cuando cambie `cron Job&skills.md`.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">Fuente: cron Job&skills.md · Kevin iOS · 1. HQ.</footer>
+</body>
+</html>
